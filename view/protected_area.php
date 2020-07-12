@@ -1,4 +1,12 @@
-<?php require_once "action.php"; ?>
+<?php
+    require_once "action.php";
+    $user_items_evals_details = get_user_items_eval_details();
+    $user_items_evals_details = json_decode($user_items_evals_details);
+    if(empty($user_items_evals_details)) {
+        var_dump("Error"); exit();
+    }
+    //var_dump(json_decode($user_items_evals_details)->categories);exit();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -60,7 +68,7 @@
                                         <h3 class="wizard-title">
                                             Welcome to Your Evaluation
                                         </h3>
-                                        <h5>This information will let us know more about you.</h5>
+                                        <h5>User Id : <?= $user_items_evals_details->user_id; ?></h5>
                                     </div>
                                     <div class="col-md-3  text-center">
                                         <div id="fluid-meter"></div>
@@ -73,7 +81,7 @@
 
                                             foreach ($categories_list as $id => $value) {
                                         ?>
-                                                <li><a href="#<?=$id;?>" data-toggle="tab"><?=$value;?></a></li>
+                                                <li><a href="#tab_pane_<?=$id;?>" data-toggle="tab"><?=$value;?></a></li>
                                         <?php } ?>
 			                        </ul>
 								</div>
@@ -84,7 +92,7 @@
 
                                     foreach ($categories_list as $id => $value) {
                                         ?>
-                                        <div class="tab-pane" id="<?=$id?>">
+                                        <div class="tab-pane" id="tab_pane_<?=$id?>">
                                             <?php include "view/element/tab_content.php";?>
                                         </div>
                                     <?php } ?>
