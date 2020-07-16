@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 use Auth0\SDK\API\Authentication;
 
 require __DIR__ . '/vendor/autoload.php';
@@ -37,6 +37,7 @@ curl_close($curl);
 if ($err) {
     echo "cURL Error #:" . $err;
 } else {
+    $_SESSION
     var_dump($response);
 }
 
