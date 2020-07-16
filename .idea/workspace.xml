@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e8f21439-773f-49ae-9e88-7db7bfb1da34" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/auth0-api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/auth0-api/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/auth0-api/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +50,7 @@
       <recent name="$PROJECT_DIR$/assets/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/view" />
     </key>
   </component>
@@ -76,7 +78,7 @@
       <updated>1594037921642</updated>
       <workItem from="1594037923253" duration="8816000" />
       <workItem from="1594478414260" duration="16546000" />
-      <workItem from="1594819231017" duration="15937000" />
+      <workItem from="1594819231017" duration="16144000" />
     </task>
     <servers />
   </component>
