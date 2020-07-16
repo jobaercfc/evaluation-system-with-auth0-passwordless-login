@@ -25,7 +25,7 @@ var bootstrapWizardCreate = function(element, options) {
 	this.rebindClick = function(selector, fn)
 	{
 		selector.unbind('click', fn).bind('click', fn);
-	}
+	};
 
 	this.fixNavigationButtons = function() {
 		// Get the current active tab
@@ -279,7 +279,7 @@ $.fn.bootstrapWizard.defaults = {
 	onFirst:          null,
 	onTabChange:      null,
 	onTabClick:       null,
-	onTabShow:        null
+	onTabShow:        null,
 };
 
 })(jQuery);

@@ -2,12 +2,397 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8f21439-773f-49ae-9e88-7db7bfb1da34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/element/tab_content1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/.idea/00-starter-seed.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/dotenv-loader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/protected_area.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/public/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/.circleci/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/.github/CODEOWNERS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/.github/stale.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/.phpcs-compat.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/.phpcs.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/MIGRATE-v5-TO-v7.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/codecov.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Authentication.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Header/AuthorizationBearer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Header/ContentType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Header/ForwardedFor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Header/Header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Header/Telemetry.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Helpers/ApiClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Helpers/InformationHeaders.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Helpers/RequestBuilder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/Blacklists.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/ClientGrants.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/Clients.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/Connections.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/DeviceCredentials.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/EmailTemplates.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/Emails.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/GenericResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/Grants.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/Guardian.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/Jobs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/Logs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/ResourceServers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/Roles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/Rules.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/Stats.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/Tenants.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/Tickets.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/UserBlocks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/Users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/API/Management/UsersByEmail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Auth0.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Exception/ApiException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Exception/CoreException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Exception/EmptyOrInvalidParameterException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Exception/InvalidPermissionsArrayException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Exception/InvalidTokenException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Helpers/Cache/NoCacheHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Helpers/JWKFetcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Helpers/Tokens/AsymmetricVerifier.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Helpers/Tokens/IdTokenVerifier.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Helpers/Tokens/SignatureVerifier.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Helpers/Tokens/SymmetricVerifier.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Helpers/Tokens/TokenVerifier.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Helpers/TransientStoreHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Store/CookieStore.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Store/EmptyStore.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Store/SessionStore.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/src/Store/StoreInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/ApiTests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Authentication/ClientCredentialsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Authentication/DbConnectionsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Authentication/MockAuthenticationApi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Authentication/PasswordGrantTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Authentication/PasswordlessTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Authentication/RefreshTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Authentication/UrlBuildersTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Header/HeaderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Helpers/InformationHeadersExtendTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Helpers/InformationHeadersTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Helpers/RequestBuilderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Management/BlacklistsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Management/ClientGrantsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Management/ClientsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Management/ConnectionsMockedTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Management/EmailTemplatesMockedTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Management/EmailsMockedTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Management/GrantsMockedTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Management/GuardianTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Management/JobsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Management/LogsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Management/MockManagementApi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Management/ResourceServersTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Management/RolesMockedTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Management/RulesTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/API/Management/UsersMockedTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/Auth0StoreTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/Auth0Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/Helpers/Cache/NoCacheHandlerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/Helpers/JWKFetcherTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/Helpers/MockJwks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/Helpers/Tokens/AsymmetricVerifierTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/Helpers/Tokens/IdTokenVerifierTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/Helpers/Tokens/SymmetricVerifierTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/Helpers/TransientStoreHandlerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/MockApi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/Store/CookieStoreTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/Store/SessionStoreTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/json/localhost--custom-jwks-json.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/json/localhost--well-known-jwks-json.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/json/test-import-users-file.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/json/test-jwks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/auth0/auth0-php/tests/traits/ErrorHelpers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/composer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/composer/autoload_files.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/composer/autoload_real.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/composer/autoload_static.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/composer/installed.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/.php_cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/UPGRADING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Client.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/ClientInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Cookie/CookieJar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Cookie/CookieJarInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Cookie/FileCookieJar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Cookie/SessionCookieJar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Cookie/SetCookie.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Exception/BadResponseException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Exception/ClientException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Exception/ConnectException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Exception/GuzzleException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Exception/InvalidArgumentException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Exception/SeekException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Exception/ServerException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Exception/TooManyRedirectsException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Exception/TransferException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Handler/CurlFactoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Handler/CurlHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Handler/EasyHandle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Handler/MockHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/HandlerStack.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/MessageFormatter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Middleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Pool.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/PrepareBodyMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/RequestOptions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/RetryMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/TransferStats.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/UriTemplate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/Utils.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/guzzle/src/functions_include.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/src/AggregateException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/src/CancellationException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/src/Coroutine.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/src/EachPromise.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/src/FulfilledPromise.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/src/Promise.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/src/PromiseInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/src/PromisorInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/src/RejectedPromise.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/src/RejectionException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/src/TaskQueue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/src/TaskQueueInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/src/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/promises/src/functions_include.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/AppendStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/BufferStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/CachingStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/DroppingStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/FnStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/InflateStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/LazyOpenStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/LimitStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/MessageTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/MultipartStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/NoSeekStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/PumpStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/Response.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/Rfc7230.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/ServerRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/Stream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/StreamDecoratorTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/StreamWrapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/UploadedFile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/Uri.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/UriNormalizer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/UriResolver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/guzzlehttp/psr7/src/functions_include.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/.scrutinizer.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/phpunit.xml.dist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Builder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Claim.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Claim/Basic.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Claim/EqualsTo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Claim/Factory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Claim/GreaterOrEqualsTo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Claim/LesserOrEqualsTo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Claim/Validatable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Parser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Parsing/Decoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Parsing/Encoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signature.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/BaseSigner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/Ecdsa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/Ecdsa/MultibyteStringConverter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/Ecdsa/Sha256.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/Ecdsa/Sha384.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/Ecdsa/Sha512.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/Ecdsa/SignatureConverter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/Hmac.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/Hmac/Sha256.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/Hmac/Sha384.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/Hmac/Sha512.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/Key.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/Keychain.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/OpenSSL.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/Rsa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/Rsa/Sha256.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/Rsa/Sha384.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Signer/Rsa/Sha512.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/Token.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/src/ValidationData.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/functional/EcdsaTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/functional/HmacTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/functional/Keys.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/functional/RFC6978VectorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/functional/RsaTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/functional/UnsignedTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/functional/ecdsa/private.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/functional/ecdsa/private2.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/functional/ecdsa/public1.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/functional/ecdsa/public2.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/functional/ecdsa/public3.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/functional/rsa/encrypted-private.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/functional/rsa/encrypted-public.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/functional/rsa/private.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/functional/rsa/public.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/BuilderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Claim/BasicTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Claim/EqualsToTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Claim/FactoryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Claim/GreaterOrEqualsToTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Claim/LesserOrEqualsToTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/ParserTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Parsing/DecoderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Parsing/EncoderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/SignatureTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Signer/BaseSignerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Signer/Ecdsa/MultibyteStringConverterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Signer/Ecdsa/Sha256Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Signer/Ecdsa/Sha384Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Signer/Ecdsa/Sha512Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Signer/EcdsaTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Signer/Hmac/Sha256Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Signer/Hmac/Sha384Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Signer/Hmac/Sha512Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Signer/HmacTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Signer/KeyTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Signer/KeychainTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Signer/Rsa/Sha256Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Signer/Rsa/Sha384Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Signer/Rsa/Sha512Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/Signer/RsaTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/TokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/lcobucci/jwt/test/unit/ValidationDataTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/phpoption/phpoption/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/phpoption/phpoption/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/phpoption/phpoption/src/PhpOption/LazyOption.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/phpoption/phpoption/src/PhpOption/None.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/phpoption/phpoption/src/PhpOption/Option.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/phpoption/phpoption/src/PhpOption/Some.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/http-message/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/http-message/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/http-message/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/http-message/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/http-message/src/MessageInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/http-message/src/RequestInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/http-message/src/ResponseInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/http-message/src/ServerRequestInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/http-message/src/StreamInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/http-message/src/UploadedFileInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/http-message/src/UriInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/simple-cache/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/simple-cache/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/simple-cache/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/simple-cache/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/simple-cache/src/CacheException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/simple-cache/src/CacheInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/psr/simple-cache/src/InvalidArgumentException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/ralouphie/getallheaders/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/ralouphie/getallheaders/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/ralouphie/getallheaders/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/ralouphie/getallheaders/src/getallheaders.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/symfony/polyfill-ctype/Ctype.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/symfony/polyfill-ctype/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/symfony/polyfill-ctype/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/symfony/polyfill-ctype/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/symfony/polyfill-ctype/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/symfony/polyfill-intl-idn/Idn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/symfony/polyfill-intl-idn/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/symfony/polyfill-intl-idn/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/symfony/polyfill-intl-idn/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/symfony/polyfill-intl-idn/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/symfony/polyfill-php72/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/symfony/polyfill-php72/Php72.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/symfony/polyfill-php72/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/symfony/polyfill-php72/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/symfony/polyfill-php72/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Dotenv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Environment/AbstractVariables.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Environment/Adapter/AdapterInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Environment/Adapter/ApacheAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Environment/Adapter/ArrayAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Environment/Adapter/EnvConstAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Environment/Adapter/PutenvAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Environment/Adapter/ServerConstAdapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Environment/DotenvFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Environment/DotenvVariables.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Environment/FactoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Environment/VariablesInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Exception/ExceptionInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Exception/InvalidFileException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Exception/InvalidPathException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Exception/ValidationException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Lines.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Loader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Parser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Regex/Error.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Regex/Regex.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Regex/Result.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Regex/Success.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/auth0-api/vendor/vlucas/phpdotenv/src/Validator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protected_area.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/verify.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/jquery.bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/jquery.bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/material-bootstrap-wizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/material-bootstrap-wizard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global_variables.php" beforeDir="false" afterPath="$PROJECT_DIR$/global_variables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/element/tab_content.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/element/tab_content.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/protected_area.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/protected_area.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/protected_area.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/evaluation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +426,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/view/element" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/auth0-api" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/view" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api/auth0-api" />
+      <recent name="$PROJECT_DIR$/api" />
       <recent name="$PROJECT_DIR$/view/element" />
       <recent name="$PROJECT_DIR$/view" />
       <recent name="$PROJECT_DIR$/assets/js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/view" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -77,7 +464,8 @@
       <option name="presentableId" value="Default" />
       <updated>1594037921642</updated>
       <workItem from="1594037923253" duration="8816000" />
-      <workItem from="1594478414260" duration="15594000" />
+      <workItem from="1594478414260" duration="16546000" />
+      <workItem from="1594819231017" duration="15370000" />
     </task>
     <servers />
   </component>
@@ -85,13 +473,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="541" y="380" key="NewPhpFileDialog" timestamp="1594528931290">
+    <state x="541" y="380" key="NewPhpFileDialog" timestamp="1594878651220">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="541" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1594528931290" />
-    <state x="386" y="207" width="667" height="486" key="find.popup" timestamp="1594042882736">
+    <state x="541" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1594878651220" />
+    <state x="399" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1594819377906">
+      <screen x="0" y="23" width="1440" height="795" />
+    </state>
+    <state x="399" y="282" key="com.intellij.ide.util.TipDialog/0.23.1440.795@0.23.1440.795" timestamp="1594819377906" />
+    <state x="386" y="207" width="667" height="486" key="find.popup" timestamp="1594838313206">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="386" y="207" width="667" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1594042882736" />
+    <state x="386" y="207" width="667" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1594838313206" />
   </component>
 </project>

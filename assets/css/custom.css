@@ -13,7 +13,7 @@
     background-color: #ff9035;
     background-image: linear-gradient(100deg, #ff5a64 0%, #faa04b 30%, #d2dc69 70%, #0ef49b 100%);
     z-index: 0;
-    height: 80px;
+    height: 50px;
     float: none;
     margin: 0 auto;
     width: 700px;
@@ -25,11 +25,22 @@
 .btns-pb input {
     display: none;
 }
-.btns-pb label {
+.mastery-label {
     display: table;
     float: left;
     padding: 0;
     width: 20%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.interest-label {
+    display: table;
+    float: left;
+    padding: 0;
+    width: 25%;
     height: 100%;
     margin: 0;
     text-align: center;
@@ -43,7 +54,7 @@
     border-radius: 0 40px 40px 0;
 }
 .btns-pb .btn-pb {
-    font-size: 1.5vmax;
+    font-size: 1.3vmax;
     cursor: pointer;
     width: 100%;
     display: table-cell;

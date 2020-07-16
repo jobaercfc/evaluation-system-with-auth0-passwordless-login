@@ -13,8 +13,8 @@
             $item_mastery_count = 1;
             foreach ($item_mastery_level as $item) {
                 ?>
-                <label>
-                    <input checked='' name='button-group' type='radio' value='item'>
+                <label class="mastery-label">
+                    <input name='mastery_<?=$items_detail->id?>' type='radio' value='item'>
                     <span class='btn-pb <?=($item_mastery_count == 1) ? "first" : "";?><?=($item_mastery_count == count($item_mastery_level)) ? "last" : "";?>'><?=$item;?></span>
                     </input>
                 </label>
@@ -27,8 +27,8 @@
             $item_interest_count = 1;
             foreach ($item_interest_level as $item) {
                 ?>
-                <label>
-                    <input checked='' name='button' type='radio' value='<?=$item;?>>'>
+                <label class="interest-label">
+                    <input name='interest_<?=$items_detail->id;?>' type='radio' value='<?=$item;?>>'>
                     <span class='btn-pb <?=($item_interest_count == 1) ? "first" : "";?><?=($item_interest_count == count($item_interest_level)) ? "last" : "";?>'><?=$item;?></span>
                     </input>
                 </label>

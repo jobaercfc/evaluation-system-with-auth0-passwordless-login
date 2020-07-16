@@ -1,3 +1,3 @@
 <?php
     require "global_variables.php";
-    include "view/protected_area.php";
+    include "view/verify.php";

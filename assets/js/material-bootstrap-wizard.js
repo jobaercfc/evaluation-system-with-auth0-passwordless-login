@@ -29,14 +29,6 @@ $(document).ready(function(){
     // Code for the Validator
     var $validator = $('.wizard-card form').validate({
 		  rules: {
-		    firstname: {
-		      required: true,
-		      minlength: 3
-		    },
-		    lastname: {
-		      required: true,
-		      minlength: 3
-		    },
 		    email: {
 		      required: true,
 		      minlength: 3,
@@ -48,6 +40,13 @@ $(document).ready(function(){
          }
 	});
 
+    $('#send_magic_link').on('click', function () {
+        var $valid = $('.wizard-card form').valid();
+        if(!$valid) {
+            $validator.focusInvalid();
+            return false;
+        }
+    });
     // Wizard Initialization
   	$('.wizard-card').bootstrapWizard({
         'tabClass': 'nav nav-pills',

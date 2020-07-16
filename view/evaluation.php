@@ -1,5 +1,5 @@
 <?php
-    require_once "action.php";
+require_once "../action.php";
     $user_items_evals_details = get_user_items_eval_details();
     $user_items_evals_details = json_decode($user_items_evals_details);
     if(empty($user_items_evals_details)) {
