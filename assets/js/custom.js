@@ -78,5 +78,28 @@ $(document).ready(function () {
             }
         })
     });
+    setDefaultTab();
+    function setDefaultTab() {
+        var names = [];
+        $("form").each(function() {
+            names.push(this.id);
+        });
+        var defaultTabId = 0;
+        for (var i = 0; i < names.length; i++) {
+            var active_id = names[i];
+            defaultTabId = active_id.replace('form_category_', '');
+            var radioClassName = '.'+names[i]+'_input';
+            active_id = '#'+names[i];
+            var allRadio = $(active_id).find(radioClassName);
+            var dataString = $(active_id).serializeArray();
+
+            defaultTabId = parseInt(defaultTabId);
+            if(allRadio.length != dataString.length) {
+                break;
+            }
+        }
+        var navDefault = '.nav-class-'+defaultTabId+' a';
+        $(navDefault).click();
+    }
 });
 

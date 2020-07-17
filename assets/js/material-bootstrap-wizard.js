@@ -283,6 +283,29 @@ materialDesign = {
                 }
         }, 17)
 
+};
+setDefaultTab();
+function setDefaultTab() {
+    var names = [];
+    $("form").each(function() {
+        names.push(this.id);
+    });
+    var defaultTabId = 0;
+    for (var i = 0; i < names.length; i++) {
+        var active_id = names[i];
+        defaultTabId = active_id.replace('form_category_', '');
+        var radioClassName = '.'+names[i]+'_input';
+        active_id = '#'+names[i];
+        var allRadio = $(active_id).find(radioClassName);
+        var dataString = $(active_id).serializeArray();
+
+        defaultTabId = parseInt(defaultTabId);
+        if(allRadio.length != dataString.length) {
+            break;
+        } else {
+            completed_steps[i] = 1;
+        }
+    }
 }
 
 function debounce(func, wait, immediate) {
@@ -296,4 +319,4 @@ function debounce(func, wait, immediate) {
 		}, wait);
 		if (immediate && !timeout) func.apply(context, args);
 	};
-};
+}

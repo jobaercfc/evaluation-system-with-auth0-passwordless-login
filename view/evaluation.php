@@ -80,7 +80,7 @@
 
                                             foreach ($categories_list as $id => $value) {
                                         ?>
-                                                <li><a href="#tab_pane_<?=$id;?>" data-toggle="tab"><?=$value;?></a></li>
+                                                <li class="nav-class-<?=$id;?>"><a href="#tab_pane_<?=$id;?>" data-toggle="tab"><?=$value;?></a></li>
                                         <?php } ?>
 			                        </ul>
 								</div>
