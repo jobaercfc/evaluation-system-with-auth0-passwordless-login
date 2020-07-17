@@ -1,12 +1,3 @@
-<?php
-    require_once "action.php";
-    $user_items_evals_details = get_user_items_eval_details();
-    $user_items_evals_details = json_decode($user_items_evals_details);
-    if(empty($user_items_evals_details)) {
-        var_dump("Error"); exit();
-    }
-    //var_dump(json_decode($user_items_evals_details)->categories);exit();
-?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -57,14 +48,32 @@
     <!--   Big container   -->
     <div class="container">
         <div class="row">
+            <div class="alert alert-success" role="alert" style="display: <?php echo isset($_SESSION["flash_success"]) ? 'block' : 'none'; ?>">
+                <?php
+                    if(isset($_SESSION["flash_success"])) {
+                        $_SESSION["flash_success"] = $labels['auth_page']['message_magic_link_sent'];
+                        echo $_SESSION["flash_success"];
+                        unset($_SESSION["flash_success"]);
+                    }
+                ?>
+            </div>
+            <div class="alert alert-danger" role="alert" style="display: <?php echo isset($_SESSION["warning_flash"]) ? 'block' : 'none'; ?>">
+                <?php
+                    if(isset($_SESSION["warning_flash"])) {
+                        echo $_SESSION["warning_flash"];
+                        unset($_SESSION["warning_flash"]);
+                        session_destroy();
+                    }
+                ?>
+            </div>
             <div class="col-sm-8 col-sm-offset-2">
                 <!--      Wizard container        -->
                 <div class="wizard-container">
                     <div class="card wizard-card" data-color="blue" id="wizard">
-                        <!--        You can switch " data-color="blue" "  with one of the next bright colors: "green", "orange", "red", "purple"             -->
+                        <!--  You can switch " data-color="blue" "  with one of the next bright colors: "green", "orange", "red", "purple"             -->
                         <div class="wizard-header">
                             <h3 class="wizard-title">
-                                Project DJAS
+                                <?=$labels['auth_page']['welcome_message'];?>
                             </h3>
                         </div>
                         <div class="wizard-navigation">
@@ -76,7 +85,7 @@
                         <div class="tab-content">
                             <div class="tab-pane" id="details">
                                 <div class="row">
-                                    <h4 class="info-text"> Let's start with your Email</h4>
+                                    <h4 class="info-text"><?=$labels['auth_page']['ask_email'];?></h4>
                                     <div class="col-sm-10 col-sm-offset-1">
                                         <form action="<?=$base_url;?>/api/auth0-api/index.php" method="post">
                                             <div class="input-group">
@@ -84,13 +93,13 @@
                                                     <i class="material-icons">email</i>
                                                 </span>
                                                 <div class="form-group label-floating">
-                                                    <label class="control-label">Email <small>(required)</small></label>
+                                                    <label class="control-label"><?=$labels['auth_page']['email_input_placeholder'];?></label>
                                                     <input name="email" type="email" class="form-control valid" aria-required="true" aria-invalid="false">
                                                     <span class="material-input"></span>
                                                 </div>
                                             </div>
                                             <div class="form-group text-center">
-                                                <button type="submit" class="btn btn-primary" id="send_magic_link">Send me a magic link</button>
+                                                <button type="submit" class="btn btn-primary" id="send_magic_link"><?=$labels['auth_page']['send_magic_link'];?></button>
                                             </div>
                                         </form>
 

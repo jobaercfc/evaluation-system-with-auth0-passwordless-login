@@ -23,8 +23,12 @@
                 method: "POST",
                 data: params,
                 success: function(data) {
-                    dataJson = JSON.parse(data);
-                    console.log(dataJson.email)
+                    var response = JSON.parse(data);
+                    if(response['status'] == 200) {
+                        window.location.href = "<?=$base_url;?>/evaluation.php";
+                    } else {
+                        window.location.href = "<?=$base_url;?>/index.php";
+                    }
                 }
             })
         }
@@ -34,5 +38,6 @@
 
 <!--   Core JS Files   -->
 <script src="<?=$base_url;?>/assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<h3>You are being redirected. Please wait....</h3>
 
 

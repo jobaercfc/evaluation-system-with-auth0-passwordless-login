@@ -1,11 +1,17 @@
 <?php
-require_once "../action.php";
-    $user_items_evals_details = get_user_items_eval_details();
-    $user_items_evals_details = json_decode($user_items_evals_details);
-    if(empty($user_items_evals_details)) {
-        var_dump("Error"); exit();
+    if(isset($_SESSION['verify']) && $_SESSION['verify'] == true) {
+
+        $user_items_evals_details = get_user_items_eval_details();
+        $user_items_evals_details = json_decode($user_items_evals_details);
+        if(empty($user_items_evals_details)) {
+            echo "An error occured";
+            exit();
+        }
+
+    } else {
+        $_SESSION['warning_flash'] = "An error occured. Please try again";
+        echo '<script>window.location.href="'.$base_url.'";</script>';
     }
-    //var_dump(json_decode($user_items_evals_details)->categories);exit();
 ?>
 <!doctype html>
 <html lang="en">
@@ -61,14 +67,13 @@ require_once "../action.php";
 		            <!--      Wizard container        -->
 		            <div class="wizard-container">
 		                <div class="card wizard-card" data-color="blue" id="wizard">
-		                    <form action="" method="">
 		                <!--        You can switch " data-color="blue" "  with one of the next bright colors: "green", "orange", "red", "purple"             -->
                                 <div class="row">
                                     <div class="wizard-header col-md-9">
                                         <h3 class="wizard-title">
                                             Welcome to Your Evaluation
                                         </h3>
-                                        <h5>User Id : <?= $user_items_evals_details->user_id; ?></h5>
+                                        <h5><?= $labels['eval_page']['user_info'] . " : " . $user_items_evals_details->user_id; ?></h5>
                                     </div>
                                     <div class="col-md-3  text-center">
                                         <div id="fluid-meter"></div>
@@ -92,33 +97,21 @@ require_once "../action.php";
 
                                     foreach ($categories_list as $id => $value) {
                                         ?>
-                                        <div class="tab-pane" id="tab_pane_<?=$id?>">
+                                        <div class="tab-pane" id="tab_pane_<?=$id;?>">
                                             <?php include "view/element/tab_content.php";?>
                                         </div>
                                     <?php } ?>
-
+                                    <div class="wizard-footer">
+                                        <div class="pull-right">
+                                            <input type='button' id="next-btn" class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='Next' />
+                                            <input type='button' class='btn btn-finish btn-fill btn-danger btn-wd' name='finish' value='Finish' />
+                                        </div>
+                                        <div class="pull-left">
+                                            <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
 		                        </div>
-	                        	<div class="wizard-footer">
-	                            	<div class="pull-right">
-	                                    <input type='button' id="next-btn" class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='Next' />
-	                                    <input type='button' class='btn btn-finish btn-fill btn-danger btn-wd' name='finish' value='Finish' />
-	                                </div>
-	                                <div class="pull-left">
-	                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
-										<div class="footer-checkbox">
-											<div class="col-sm-12">
-											  <!--<div class="checkbox">
-												  <label>
-													  <input type="checkbox" name="optionsCheckboxes">
-												  </label>
-												  Subscribe to our newsletter
-											  </div>-->
-										  </div>
-										</div>
-	                                </div>
-	                                <div class="clearfix"></div>
-	                        	</div>
-		                    </form>
 		                </div>
 		            </div> <!-- wizard container -->
 		        </div>
@@ -138,7 +131,10 @@ require_once "../action.php";
 	<script src="<?=$base_url;?>/assets/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="<?=$base_url;?>/assets/js/jquery.bootstrap.js" type="text/javascript"></script>
 
-	<!--  Plugin for the Wizard -->
+    <!--  Plugin for alert      -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <!--  Plugin for the Wizard -->
 	<script src="<?=$base_url;?>/assets/js/material-bootstrap-wizard.js"></script>
 	<script src="<?=$base_url;?>/assets/js/js-fluid-meter.js"></script>
 

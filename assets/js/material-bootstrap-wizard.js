@@ -18,9 +18,8 @@
 var searchVisible = 0;
 var transparent = true;
 var mobile_device = false;
-
+var completed_steps = [];
 $(document).ready(function(){
-
     $.material.init();
 
     /*  Activate the tooltips      */
@@ -31,7 +30,7 @@ $(document).ready(function(){
 		  rules: {
 		    email: {
 		      required: true,
-		      minlength: 3,
+		      email: true,
 		    }
         },
 
@@ -53,12 +52,33 @@ $(document).ready(function(){
         'nextSelector': '.btn-next',
         'previousSelector': '.btn-previous',
 
+        onPrevious: function(tab, navigation, index) {
+            $('html, body').animate({
+                scrollTop: $("#fluid-meter").offset().top
+            }, 'slow');
+
+        },
+
         onNext: function(tab, navigation, index) {
-        	var $valid = $('.wizard-card form').valid();
-        	if(!$valid) {
-        		$validator.focusInvalid();
-        		return false;
-        	}
+            var active_id = $('.tab-content .active form').attr('id');
+            var radioClassName = '.'+active_id+'_input';
+            active_id = '#'+active_id;
+            var allRadio = $(active_id).find(radioClassName);
+            var dataString = $(active_id).serializeArray();
+
+            if(allRadio.length != dataString.length) {
+                Swal.fire(
+                    'Warning',
+                    '<p style="font-size: 20px">Please select mastery and interest level for every item to finish the step.</p>',
+                    'warning'
+                );
+                return false;
+            } else {
+                $('html, body').animate({
+                    scrollTop: $("#fluid-meter").offset().top
+                }, 'slow');
+            }
+
         },
 
         onInit : function(tab, navigation, index){
@@ -75,13 +95,36 @@ $(document).ready(function(){
             $('.moving-tab').css('transition','transform 0s');
        },
 
-        onTabClick : function(tab, navigation, index){
-            var $valid = $('.wizard-card form').valid();
+        onTabClick : function(tab, navigation, index, clickedIndex){
+            var active_id = $('.tab-content .active form').attr('id');
+            var radioClassName = '.'+active_id+'_input';
+            active_id = '#'+active_id;
+            var allRadio = $(active_id).find(radioClassName);
+            var dataString = $(active_id).serializeArray();
 
-            if(!$valid){
+            if((allRadio.length != dataString.length) && (clickedIndex > index)) {
+                Swal.fire(
+                    'Warning',
+                    '<p style="font-size: 20px">Please select mastery and interest level for every item to finish the step.</p>',
+                    'warning'
+                );
                 return false;
-            } else{
-                return true;
+            } else {
+                if((allRadio.length == dataString.length)) {
+                    completed_steps[index] = 1;
+                }
+                if(clickedIndex > index) {
+                    for (var i = 0; i < clickedIndex; i++) {
+                        if(completed_steps[i] != 1) {
+                            Swal.fire(
+                                'Warning',
+                                '<p style="font-size: 20px">Please complete the previous steps.</p>',
+                                'warning'
+                            );
+                            return false;
+                        }
+                    }
+                }
             }
         },
 

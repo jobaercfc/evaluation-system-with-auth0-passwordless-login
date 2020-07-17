@@ -1,15 +1,14 @@
 <?php
 session_start();
-use Auth0\SDK\API\Authentication;
 
 require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/dotenv-loader.php';
 
+$email = "";
 
-$api = new Authentication(getenv('AUTH0_DOMAIN'), getenv('AUTH0_CLIENT_ID'));
-
-
-$email = $_POST["email"];
+if(isset($_POST["email"])) {
+    $email = $_POST["email"];
+}
 
 $client_secret = getenv('AUTH0_CLIENT_SECRET');
 $client_id = getenv('AUTH0_CLIENT_ID');
@@ -37,8 +36,9 @@ curl_close($curl);
 if ($err) {
     echo "cURL Error #:" . $err;
 } else {
-    $_SESSION
-    var_dump($response);
+    $_SESSION["email"] = $email;
+    $_SESSION["flash_success"] = "success";
+    echo "<script>window.location.href='http://localhost/project_djas/';</script>";
 }
 
 
