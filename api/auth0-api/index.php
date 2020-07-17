@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+require '../../database_connection.php';
 require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/dotenv-loader.php';
 
@@ -36,8 +36,19 @@ curl_close($curl);
 if ($err) {
     echo "cURL Error #:" . $err;
 } else {
-    $_SESSION["email"] = $email;
-    $_SESSION["flash_success"] = "success";
+    $sql = "select * from users where email = ?";
+    $run = $conn->prepare($sql);
+    $run->execute([$email]);
+
+    if($run->rowCount()) {
+        $row = $run->fetchAll();
+        $_SESSION["email"] = $email;
+        $_SESSION["user_id"] = $row[0]["id"];
+        $_SESSION["flash_success"] = "success";
+    } else {
+        $_SESSION["warning_flash"] = "User not found.";
+    }
+
     echo "<script>window.location.href='http://localhost/project_djas/';</script>";
 }
 

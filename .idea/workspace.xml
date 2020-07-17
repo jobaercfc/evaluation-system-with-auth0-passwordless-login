@@ -5,15 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/action.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/auth0-api/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/auth0-api/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/auth0-api/protected_area.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/auth0-api/protected_area.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/material-bootstrap-wizard.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/material-bootstrap-wizard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/material-bootstrap-wizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/material-bootstrap-wizard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global_variables.php" beforeDir="false" afterPath="$PROJECT_DIR$/global_variables.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/element/tab_content.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/element/tab_content.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/evaluation.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/evaluation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/verify.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/verify.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +81,7 @@
       <updated>1594037921642</updated>
       <workItem from="1594037923253" duration="8816000" />
       <workItem from="1594478414260" duration="16546000" />
-      <workItem from="1594819231017" duration="38397000" />
+      <workItem from="1594819231017" duration="45714000" />
     </task>
     <servers />
   </component>
@@ -107,5 +101,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="386" y="207" width="667" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1594977119154" />
+    <state x="385" y="196" width="670" height="58" key="search.everywhere.popup" timestamp="1594986066651">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="58" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1594986066651" />
   </component>
 </project>

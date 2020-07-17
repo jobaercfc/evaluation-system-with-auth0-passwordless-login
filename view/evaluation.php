@@ -54,12 +54,6 @@
 	        </div>
 	    </a>
 
-		<!--  Made With Material Kit  -->
-		<a href="http://demos.creative-tim.com/material-kit/index.html?ref=material-bootstrap-wizard" class="made-with-mk">
-			<div class="brand">MK</div>
-			<div class="made-with">Made with <strong>Material Kit</strong></div>
-		</a>
-
 	    <!--   Big container   -->
 	    <div class="container">
 	        <div class="row">
@@ -73,7 +67,7 @@
                                         <h3 class="wizard-title">
                                             Welcome to Your Evaluation
                                         </h3>
-                                        <h5><?= $labels['eval_page']['user_info'] . " : " . $user_items_evals_details->user_id; ?></h5>
+                                        <h5><?= $labels['eval_page']['user_info'] . " : " . $_SESSION['user_id']; ?></h5>
                                     </div>
                                     <div class="col-md-3  text-center">
                                         <div id="fluid-meter"></div>

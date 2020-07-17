@@ -1,6 +1,5 @@
 <div class='vertical-align row'>
     <form method="" action="" id="form_category_<?=$id;?>" name="form_category_<?=$id;?>">
-
     <?php
         $items_details = $user_items_evals_details->categories->$id;
 
@@ -13,10 +12,10 @@
         <div class="btns-pb form_category_<?=$id;?>_input">
             <?php
             $item_mastery_count = 1;
-            foreach ($item_mastery_level as $item) {
+            foreach ($item_mastery_level as $key => $item) {
                 ?>
                 <label class="mastery-label">
-                    <input name='mastery_<?=$items_detail->specific_item_id?>' type='radio' value='<?=$item;?>'>
+                    <input itemid="<?=$items_detail->specific_item_id;?>" <?=($items_detail->selected_master_level != NULL &&($items_detail->selected_master_level == $key)) ? "checked" : "";?> class="mastery-class" name='mastery_<?=$items_detail->specific_item_id?>' type='radio' value='<?=$key;?>'>
                     <span class='btn-pb <?=($item_mastery_count == 1) ? "first" : "";?><?=($item_mastery_count == count($item_mastery_level)) ? "last" : "";?>'><?=$item;?></span>
                     </input>
                 </label>
@@ -27,10 +26,10 @@
         <div class="btns-pb form_category_<?=$id;?>_input">
             <?php
             $item_interest_count = 1;
-            foreach ($item_interest_level as $item) {
+            foreach ($item_interest_level as $key => $item) {
                 ?>
                 <label class="interest-label">
-                    <input name='interest_<?=$items_detail->specific_item_id;?>' type='radio' value='<?=$item;?>'>
+                    <input itemid="<?=$items_detail->specific_item_id;?>" <?= ($items_detail->selected_interest_level != NULL && ($items_detail->selected_interest_level == $key)) ? "checked" : ""?> class="interest-class" name='interest_<?=$items_detail->specific_item_id;?>' type='radio' value='<?=$key;?>'>
                     <span class='btn-pb <?=($item_interest_count == 1) ? "first" : "";?><?=($item_interest_count == count($item_interest_level)) ? "last" : "";?>'><?=$item;?></span>
                     </input>
                 </label>
