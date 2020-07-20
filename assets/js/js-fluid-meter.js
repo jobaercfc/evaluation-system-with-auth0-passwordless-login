@@ -354,16 +354,16 @@ function FluidMeter() {
           backgroundFluidLayer.horizontalSpeed = env.options.backgroundFluidLayer.horizontalSpeed || backgroundFluidLayer.horizontalSpeed;
         }
       }
-
-
-
+      
       bubblesLayer.init();
       setupCanvas();
       draw();
     },
     setPercentage(percentage) {
-
       fillPercentage = clamp(percentage, 0, 100);
+    },
+    setText(text) {
+      options.showText = text;
     }
   }
 };

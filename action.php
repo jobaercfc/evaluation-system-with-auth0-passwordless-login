@@ -113,3 +113,32 @@ if(isset($_POST["set_interest_level"]) && $_POST["set_interest_level"]) {
     set_interest_level($_POST["params"]);
 }
 
+if(isset($_POST["set_language"]) && $_POST["language"]) {
+    $_SESSION['lang'] = $_POST['language'];
+    echo $_SESSION['lang'];
+}
+
+if(isset($_POST["check_step"])) {
+    require "global_variables.php";
+    $return = [];
+    if(isset($_POST["complete_steps_warning"])) {
+        $return["title"] = $labels['eval_page']['warning_title'];
+        $return["msg"] = $labels['eval_page']['warning_incomplete_selection'];
+    }
+    if(isset($_POST["previous_steps_warning"])) {
+        $return["title"] = $labels['eval_page']['warning_title'];
+        $return["msg"] = $labels['eval_page']['warning_incomplete_previous_steps'];
+    }
+    if(isset($_POST["finish_steps"])) {
+        $return["title"] = $labels['eval_page']['success_title'];
+        $return["msg"] = $labels['eval_page']['success_eval_completed'];
+    }
+
+    echo json_encode($return);
+}
+
+if(isset($_POST["logout"]) && $_POST["logout"] == 1) {
+    session_destroy();
+    echo "logout";
+}
+

@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="HandheldFriendly" content="true">
 
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="<?=$base_url;?>/assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="<?=$base_url;?>/assets/img/favicon.png" />
 
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -28,16 +28,44 @@
 <body>
 <div class="image-container set-full-height" style="background-image: url('<?=$base_url;?>/assets/img/wizard-book.jpg')">
     <!--   Creative Tim Branding   -->
-    <a href="http://creative-tim.com">
-        <div class="logo-container">
-            <div class="logo">
-                <img src="<?=$base_url;?>/assets/img/new_logo.png">
-            </div>
-            <div class="brand">
-                Creative Tim
+    <div class="row">
+        <div class="col-md-6">
+            <a href="http://creative-tim.com">
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="<?=$base_url;?>/assets/img/new_logo.png">
+                    </div>
+                    <div class="brand">
+                        Creative Tim
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6">
+            <div class="pull-left">
+                <div class="dropdown language-selector" style="margin-top: 10px;">
+                    <span style="font-size: large; color: white">Language : </span>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
+                        <img src="<?=$base_url;?>/assets/img/<?=$language;?>.png" />
+                    </a>
+                    <ul class="dropdown-menu pull-right" id="language-selector">
+                        <li class="pick-language" lang="english">
+                            <a href="#">
+                                <img src="<?=$base_url;?>/assets/img/english.png" />
+                                <span>English</span>
+                            </a>
+                        </li>
+                        <li class="pick-language" lang="french">
+                            <a href="#">
+                                <img src="<?=$base_url;?>/assets/img/french.png" />
+                                <span>François</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </a>
+    </div>
 
     <!--  Made With Material Kit  -->
     <a href="http://demos.creative-tim.com/material-kit/index.html?ref=material-bootstrap-wizard" class="made-with-mk">
@@ -78,7 +106,7 @@
                         </div>
                         <div class="wizard-navigation">
                             <ul>
-                                <li><a href="#details" data-toggle="tab">Verification</a></li>
+                                <li><a href="#details" data-toggle="tab"><?=$labels['auth_page']['verification_message'];?></a></li>
                             </ul>
                         </div>
 
@@ -125,6 +153,30 @@
 <script src="<?=$base_url;?>/assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
 <script src="<?=$base_url;?>/assets/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="<?=$base_url;?>/assets/js/jquery.bootstrap.js" type="text/javascript"></script>
+<script>
+    $('.pick-language').click(function () {
+        var clickedLanguage = $(this).attr('lang');
+        //alert(clicked);
+        setLanguage(clickedLanguage);
+    });
+    function setLanguage(clickedLanguage) {
+        var language = clickedLanguage;
+        $.ajax({
+            url: "action.php",
+            method: "POST",
+            data: {
+                language : language,
+                set_language : 1
+            },
+            success: function(data) {
+                console.log(data);
+                window.location.reload();
+            }
+        });
+
+    }
+</script>
+
 
 <!--  Plugin for the Wizard -->
 <script src="<?=$base_url;?>/assets/js/material-bootstrap-wizard.js"></script>

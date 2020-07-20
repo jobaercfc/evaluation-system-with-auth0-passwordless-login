@@ -67,11 +67,23 @@ $(document).ready(function(){
             var dataString = $(active_id).serializeArray();
 
             if(allRadio.length != dataString.length) {
-                Swal.fire(
-                    'Warning',
-                    '<p style="font-size: 20px">Please select mastery and interest level for every item to finish the step.</p>',
-                    'warning'
-                );
+                $.ajax({
+                    url: "action.php",
+                    method: "POST",
+                    data: {
+                        complete_steps_warning : 1,
+                        check_step : 1
+                    },
+                    success: function(data) {
+                        var result = JSON.parse(data);
+                        //window.location.reload();
+                        Swal.fire(
+                            result.title,
+                            '<p style="font-size: 20px">'+result.msg+'</p>',
+                            'warning'
+                        );
+                    }
+                });
                 return false;
             } else {
                 $('html, body').animate({
@@ -103,11 +115,24 @@ $(document).ready(function(){
             var dataString = $(active_id).serializeArray();
 
             if((allRadio.length != dataString.length) && (clickedIndex > index)) {
-                Swal.fire(
-                    'Warning',
-                    '<p style="font-size: 20px">Please select mastery and interest level for every item to finish the step.</p>',
-                    'warning'
-                );
+                $.ajax({
+                    url: "action.php",
+                    method: "POST",
+                    data: {
+                        complete_steps_warning : 1,
+                        check_step : 1
+                    },
+                    success: function(data) {
+                        var result = JSON.parse(data);
+                        //window.location.reload();
+                        Swal.fire(
+                            result.title,
+                            '<p style="font-size: 20px">'+result.msg+'</p>',
+                            'warning'
+                        );
+                    }
+                });
+
                 return false;
             } else {
                 if((allRadio.length == dataString.length)) {
@@ -116,11 +141,23 @@ $(document).ready(function(){
                 if(clickedIndex > index) {
                     for (var i = 0; i < clickedIndex; i++) {
                         if(completed_steps[i] != 1) {
-                            Swal.fire(
-                                'Warning',
-                                '<p style="font-size: 20px">Please complete the previous steps.</p>',
-                                'warning'
-                            );
+                            $.ajax({
+                                url: "action.php",
+                                method: "POST",
+                                data: {
+                                    previous_steps_warning : 1,
+                                    check_step : 1
+                                },
+                                success: function(data) {
+                                    var result = JSON.parse(data);
+                                    //window.location.reload();
+                                    Swal.fire(
+                                        result.title,
+                                        '<p style="font-size: 20px">'+result.msg+'</p>',
+                                        'warning'
+                                    );
+                                }
+                            });
                             return false;
                         }
                     }

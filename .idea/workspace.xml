@@ -3,9 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="e8f21439-773f-49ae-9e88-7db7bfb1da34" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/auth0-api/protected_area.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/auth0-api/protected_area.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/js-fluid-meter.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/js-fluid-meter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/material-bootstrap-wizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/material-bootstrap-wizard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/lang/english.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lang/english.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/lang/french.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lang/french.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation.php" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global_variables.php" beforeDir="false" afterPath="$PROJECT_DIR$/global_variables.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/evaluation.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/evaluation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/verify.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/verify.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +87,7 @@
       <updated>1594037921642</updated>
       <workItem from="1594037923253" duration="8816000" />
       <workItem from="1594478414260" duration="16546000" />
-      <workItem from="1594819231017" duration="48047000" />
+      <workItem from="1594819231017" duration="66114000" />
     </task>
     <servers />
   </component>
@@ -87,18 +95,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="541" y="380" key="NewPhpFileDialog" timestamp="1594878651220">
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595022895439">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="541" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1594878651220" />
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1595022895439" />
+    <state x="541" y="380" key="NewPhpFileDialog" timestamp="1595022827460">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="541" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1595022827460" />
     <state x="399" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1594819377906">
       <screen x="0" y="23" width="1440" height="795" />
     </state>
     <state x="399" y="282" key="com.intellij.ide.util.TipDialog/0.23.1440.795@0.23.1440.795" timestamp="1594819377906" />
-    <state x="386" y="207" width="667" height="486" key="find.popup" timestamp="1594977119154">
+    <state x="386" y="207" width="667" height="486" key="find.popup" timestamp="1595217827626">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="386" y="207" width="667" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1594977119154" />
+    <state x="386" y="207" width="667" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1595217827626" />
     <state x="385" y="196" width="670" height="58" key="search.everywhere.popup" timestamp="1594986066651">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

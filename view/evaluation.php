@@ -42,17 +42,51 @@
 
 <body>
 	<div class="image-container set-full-height" style="background-image: url('<?=$base_url;?>/assets/img/wizard-book.jpg')">
-	    <!--   Creative Tim Branding   -->
-	    <a href="http://creative-tim.com">
-	         <div class="logo-container">
-	            <div class="logo">
-	                <img src="<?=$base_url;?>/assets/img/new_logo.png">
-	            </div>
-	            <div class="brand">
-	                Creative Tim
-	            </div>
-	        </div>
-	    </a>
+        <div class="row">
+            <div class="col-md-6">
+                <!--   Creative Tim Branding   -->
+                <a href="http://creative-tim.com">
+                    <div class="logo-container">
+                        <div class="logo">
+                            <img src="<?=$base_url;?>/assets/img/new_logo.png">
+                        </div>
+                        <div class="brand">
+                            Creative Tim
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <div class="pull-left">
+                    <div class="dropdown language-selector" style="margin-top: 10px;">
+                        <span style="font-size: large; color: white">Language : </span>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
+                            <img src="<?=$base_url;?>/assets/img/<?=$language;?>.png" />
+                        </a>
+                        <ul class="dropdown-menu pull-right" id="language-selector">
+                            <li class="pick-language" lang="english">
+                                <a href="#">
+                                    <img src="<?=$base_url;?>/assets/img/english.png" />
+                                    <span>English</span>
+                                </a>
+                            </li>
+                            <li class="pick-language" lang="french">
+                                <a href="#">
+                                    <img src="<?=$base_url;?>/assets/img/french.png" />
+                                    <span>François</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pull-right">
+                    <div class="">
+                        <button class="btn btn-danger" id="logout-btn"><?=$labels['eval_page']['logout'];?></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 	    <!--   Big container   -->
 	    <div class="container">
@@ -62,50 +96,50 @@
 		            <div class="wizard-container">
 		                <div class="card wizard-card" data-color="blue" id="wizard">
 		                <!--        You can switch " data-color="blue" "  with one of the next bright colors: "green", "orange", "red", "purple"             -->
-                                <div class="row">
-                                    <div class="wizard-header col-md-9">
-                                        <h3 class="wizard-title">
-                                            Welcome to Your Evaluation
-                                        </h3>
-                                        <h5><?= $labels['eval_page']['user_info'] . " : " . $_SESSION['user_id']; ?></h5>
-                                    </div>
-                                    <div class="col-md-3  text-center">
-                                        <div id="fluid-meter"></div>
-                                    </div>
+                            <div class="row">
+                                <div class="wizard-header col-md-9">
+                                    <h3 class="wizard-title">
+                                        Welcome to Your Evaluation
+                                    </h3>
+                                    <h5><?= $labels['eval_page']['user_info'] . " : " . $_SESSION['user_id']; ?></h5>
                                 </div>
-								<div class="wizard-navigation">
-									<ul>
-                                        <?php
-                                            $categories_list = get_catagories_name();
-
-                                            foreach ($categories_list as $id => $value) {
-                                        ?>
-                                                <li class="nav-class-<?=$id;?>"><a href="#tab_pane_<?=$id;?>" data-toggle="tab"><?=$value;?></a></li>
-                                        <?php } ?>
-			                        </ul>
-								</div>
-
-		                        <div class="tab-content">
+                                <div class="col-md-3  text-center">
+                                    <div id="fluid-meter"></div>
+                                </div>
+                            </div>
+                            <div class="wizard-navigation">
+                                <ul>
                                     <?php
-                                    $categories_list = get_catagories_name();
+                                        $categories_list = get_catagories_name();
 
-                                    foreach ($categories_list as $id => $value) {
-                                        ?>
-                                        <div class="tab-pane" id="tab_pane_<?=$id;?>">
-                                            <?php include "view/element/tab_content.php";?>
-                                        </div>
+                                        foreach ($categories_list as $id => $value) {
+                                    ?>
+                                            <li class="nav-class-<?=$id;?>"><a href="#tab_pane_<?=$id;?>" data-toggle="tab"><?=$value;?></a></li>
                                     <?php } ?>
-                                    <div class="wizard-footer">
-                                        <div class="pull-right">
-                                            <input type='button' id="next-btn" class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='Next' />
-                                            <input type='button' class='btn btn-finish btn-fill btn-danger btn-wd' name='finish' value='Finish' />
-                                        </div>
-                                        <div class="pull-left">
-                                            <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
-                                        </div>
-                                        <div class="clearfix"></div>
+                                </ul>
+                            </div>
+
+                            <div class="tab-content">
+                                <?php
+                                $categories_list = get_catagories_name();
+
+                                foreach ($categories_list as $id => $value) {
+                                    ?>
+                                    <div class="tab-pane" id="tab_pane_<?=$id;?>">
+                                        <?php include "view/element/tab_content.php";?>
                                     </div>
-		                        </div>
+                                <?php } ?>
+                                <div class="wizard-footer">
+                                    <div class="pull-right">
+                                        <input type='button' id="next-btn" class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='<?=$labels['eval_page']['button_next'];?>' />
+                                        <input type='button' id="finish-btn" class='btn btn-finish btn-fill btn-danger btn-wd' name='finish' value='<?=$labels['eval_page']['button_finish']?>' />
+                                    </div>
+                                    <div class="pull-left">
+                                        <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='<?=$labels['eval_page']['button_previous'];?>' />
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
 		                </div>
 		            </div> <!-- wizard container -->
 		        </div>
@@ -124,6 +158,7 @@
 	<script src="<?=$base_url;?>/assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
 	<script src="<?=$base_url;?>/assets/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="<?=$base_url;?>/assets/js/jquery.bootstrap.js" type="text/javascript"></script>
+
 
     <!--  Plugin for alert      -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>

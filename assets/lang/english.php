@@ -41,5 +41,8 @@ $labels['eval_page']['warning_incomplete_previous_steps'] = 'Please complete the
 $labels['eval_page']['success_title'] = 'Congratulations!';
 $labels['eval_page']['success_eval_completed'] = 'You have successfully completed this evaluation.';
 
+//Logout button Evaluation Pages
+$labels['eval_page']['logout'] = 'Logout'
+
 //We can add here other variables if needed ...
 ?>

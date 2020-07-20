@@ -1,8 +1,14 @@
+<?php
+require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/dotenv-loader.php';
+?>
 <script src="https://cdn.auth0.com/js/auth0/9.11/auth0.min.js"></script>
 <script type="text/javascript">
+    var domain = '<?=getenv("AUTH0_DOMAIN");?>';
+    var client_id = '<?=getenv("AUTH0_CLIENT_ID")?>';
     var webAuth = new auth0.WebAuth({
-        domain:       'dev-jobaertest.us.auth0.com',
-        clientID:     'EeudLx0nrOiUgsKOvEPKFCEhqQMmpcIL',
+        domain:       domain,
+        clientID:     client_id,
         state:        'login'
     });
     var params = window.location.hash.slice(1);
@@ -12,6 +18,7 @@
     webAuth.client.userInfo(access_token, function(err, user) {
         // Now you have the user's information
         if (err) {
+            alert(JSON.stringify(err));
             window.location.href = "index.php";
         } else {
             var params = {
