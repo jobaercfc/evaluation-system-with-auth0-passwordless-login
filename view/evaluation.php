@@ -64,16 +64,16 @@
                             <img src="<?=$base_url;?>/assets/img/<?=$language;?>.png" />
                         </a>
                         <ul class="dropdown-menu pull-right" id="language-selector">
-                            <li class="pick-language" lang="english">
+                            <li class="pick-language" lang="English">
                                 <a href="#">
-                                    <img src="<?=$base_url;?>/assets/img/english.png" />
+                                    <img src="<?=$base_url;?>/assets/img/English.png" />
                                     <span>English</span>
                                 </a>
                             </li>
-                            <li class="pick-language" lang="french">
+                            <li class="pick-language" lang="French">
                                 <a href="#">
-                                    <img src="<?=$base_url;?>/assets/img/french.png" />
-                                    <span>François</span>
+                                    <img src="<?=$base_url;?>/assets/img/French.png" />
+                                    <span>Français</span>
                                 </a>
                             </li>
                         </ul>

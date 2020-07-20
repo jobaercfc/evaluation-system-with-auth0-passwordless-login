@@ -1,5 +1,24 @@
 <?php
 session_start();
+
+function load_default_global_variables($language=null) {
+    require "database_connection.php";
+    $sql = "SELECT settings_vars.var_name as var_name, settings_vars_values.var_value_english as var_value_english, settings_vars_values.var_num_order as var_num_order, settings_vars_trans.var_value_translation as translations, languages.language_name as lang_name FROM settings_vars INNER JOIN settings_vars_values ON ( settings_vars.id = settings_vars_values.var_id ) INNER JOIN settings_vars_trans ON ( settings_vars_trans.var_value_id = settings_vars_values.id ) INNER JOIN languages ON ( languages.id = settings_vars_trans.language_id )";
+    if($language != null) {
+        $addConditions = " where languages.language_name = '$language'";
+        $sql .= $addConditions;
+    }
+    $run = $conn->prepare($sql);
+    $run->execute();
+
+    $return = [];
+    if($run->rowCount() > 0) {
+        $return = $run->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    return $return;
+}
+
 function get_catagories_name() {
     require "database_connection.php";
 
@@ -132,6 +151,7 @@ if(isset($_POST["check_step"])) {
     if(isset($_POST["finish_steps"])) {
         $return["title"] = $labels['eval_page']['success_title'];
         $return["msg"] = $labels['eval_page']['success_eval_completed'];
+        session_destroy();
     }
 
     echo json_encode($return);

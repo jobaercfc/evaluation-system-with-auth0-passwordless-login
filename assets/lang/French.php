@@ -1,7 +1,7 @@
 <?php
 //v1.0 Last updated 160072020
 //-- CONFIDENTIAL - PLEASE DO NOT SHARE - ALL RIGHTS RESERVED
-/* french.php - french language file */
+/* French.php - french language file */
 
 //UPDATES HISTORY:
 //1607/2020
